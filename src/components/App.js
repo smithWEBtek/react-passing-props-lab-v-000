@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FruitBasket from './FruitBasket';
 import Filter from './Filter';
-import FilteredFruitList from './FilteredFruitList';
+
 import { getFruitTypes } from '../fruit'
 
 class App extends Component {
@@ -18,15 +18,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      
-         <Filter filters={getFruitTypes} />
-
-        {/*<FruitBasket />
-
-        <FilteredFruitList />
-
-        <Fruit /> */}
-      
+        <FruitBasket filters={getFruitTypes} />      
       </div>
     )
   }
